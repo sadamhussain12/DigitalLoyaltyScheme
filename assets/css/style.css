@@ -90,6 +90,25 @@ a:hover {
   color: var(--light-color);
 }
 
+.custom-close-btn {
+  padding: 12px 20px;
+  background: black;
+  color: var(--light-colorss);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.custom-close-btn:hover {
+  background: var(--dark-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  color: var(--light-color);
+}
+
 
 
 
@@ -252,7 +271,7 @@ a:hover {
   font-size: 1.25rem
 }
 
-.show {
+.show-side-bar {
   left: 0
 }
 
@@ -299,7 +318,7 @@ a:hover {
     padding: 1rem 1rem 0 0
   }
 
-  .show {
+  .show-side-bar {
     width: calc(68px + 156px)
   }
 
@@ -344,4 +363,45 @@ a:hover {
 
 
 
+/* ============================
+   admin Rewards page deshbord Classes start
+============================= */
 
+.page-item.disabled .page-link {
+    color: white;
+    background-color: #0b0f2a;
+}
+
+.page-item.disabled .page-link:hover {
+    color: white;
+    background-color: #0b0f2a;
+}
+
+.page-link {
+    color: white !important;
+    background-color: #0b0f2a;
+}
+
+.page-link:hover {
+    color: white !important;
+    background-color: #0b0f2a;
+}
+
+.modal-header{
+  border-bottom: 1px solid #d3d7dc2b !important;
+}
+
+.modal-footer{
+  border-top: 1px solid #d3d7dc2b !important;
+}
+
+.modal-header .close{
+      background: white;
+    padding: 10px;
+    margin: -5px;
+    border-radius: 10px;
+}
+
+/* ============================
+  admin Rewards page deshbord Classes End
+============================= */
