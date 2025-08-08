@@ -110,6 +110,45 @@ a:hover {
 }
 
 
+       /* Common button style */
+        .btn-custom {
+            background: transparent;
+            border: 2px solid;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* Edit Button */
+        .btn-edit {
+            border-color: #0066ff;
+            color: #0066ff;
+        }
+        .btn-edit:hover {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        /* Enable Button */
+        .btn-enable {
+            border-color: #00cc66;
+            color: #00cc66;
+        }
+        .btn-enable:hover {
+            background-color: #00cc66;
+            color: white;
+        }
+
+        /* Delete Button */
+        .btn-delete {
+            border-color: #cc0000;
+            color: #cc0000;
+        }
+        .btn-delete:hover {
+            background-color: #cc0000;
+            color: white;
+        }
+
+
 
 
 /* ============================
