@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+
+
+    <title>Admin aazzzzzzzz</title>
+</head>
+
+<body id="admin-body-pd" class="admin-body-pd">
+
+
+    <section class="admin">
+        <header class="header admin-body-pd" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+            <div class="admin-header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+        </header>
+        <div class="admin-l-navbar show-side-bar" id="nav-bar">
+            <nav class="nav">
+                <div> <a href="#" class="nav_logo"> <img class="img-fluid" style="    width: 26px;"
+                            src="assets/images/logo-icon.png" alt=""> <span class="nav_logo-name">Digital Loyalty</span>
+                    </a>
+                    <div class="nav_list"> <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i>
+                            <span class="nav_name">Dashboard</span>
+
+                        </a> <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span
+                                class="nav_name">Users</span> </a> <a href="#" class="nav_link"> <i
+                                class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span>
+                        </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span
+                                class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link"> <i
+                                class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#"
+                            class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span
+                                class="nav_name">Stats</span> </a>
+                    </div>
+                </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+                        class="nav_name">SignOut</span> </a>
+            </nav>
+        </div>
+        <!--Container Main start-->
+        <div class="pt-4">
+
+            <div class="d-flex justify-content-between mb-4">
+                <h1 style="font-size: 1.8rem;"> Recent Transactions</h1>
+
+                <button class="btn custom-btn mt-0" data-toggle="modal" data-target="#staticBackdrop"><img
+                        class="img-fluid" src="assets/images/medal_16px.png" alt=""> Add New Transaction</button>
+            </div>
+
+
+            <div class="custom-card mb-4">
+
+                <h4 class="mb-2"><img class="img-fluid" src="assets/images/exchange.png" alt=""> Transaction History</h4>
+
+                <div class="search-wrapper mb-3">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search">
+                </div>
+
+                <div class="table-responsive custom-table">
+                    <table class="table align-middle table-borderless">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Type</th>
+                                <th>Points</th>
+                                <th>Reward</th>
+                                <th>Processed By</th>
+                                <th>Notes</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1001</td>
+                                <td>2025-08-06</td>
+                                <td>Sara Khan</td>
+                                <td>Earned</td>
+                                <td>+40</td>
+                                <td>£5 Off Voucher</td>
+                                <td>POS</td>
+                                <td> - </td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Action Buttons">
+                                        <button type="button" class="btn btn-custom btn-edit">Edit</button>
+                                        <button type="button" class="btn btn-custom btn-enable">Enable</button>
+                                        <button type="button" class="btn btn-custom btn-delete">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1002</td>
+                                <td>2025-08-05</td>
+                                <td>Ali Raza</td>
+                                <td>Redeemed</td>
+                                <td>-150</td>
+                                <td>Free Haircut</td>
+                                <td>POS</td>
+                                <td> - </td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Action Buttons">
+                                        <button type="button" class="btn btn-custom btn-edit">Edit</button>
+                                        <button type="button" class="btn btn-custom btn-enable">Enable</button>
+                                        <button type="button" class="btn btn-custom btn-delete">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1003</td>
+                                <td>2025-08-03</td>
+                                <td>Mehreen Akhtar</td>
+                                <td>Earned</td>
+                                <td>+30</td>
+                                <td>Free Coffee</td>
+                                <td>POS</td>
+                                <td> - </td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Action Buttons">
+                                        <button type="button" class="btn btn-custom btn-edit">Edit</button>
+                                        <button type="button" class="btn btn-custom btn-enable">Enable</button>
+                                        <button type="button" class="btn btn-custom btn-delete">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg custom-card p-0">
+                    <div class="modal-content bg-transparent">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Add New Transaction</h5>
+                            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mt-3 mb-3">
+                            <form>
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+                                        <label for="date" class="input-label-text">Date</label>
+                                        <input type="date" class="form-control input-field" id="exampleInputDate">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="email" class="input-label-text">Customer Name</label>
+                                        <input type="email" class="form-control input-field" id="exampleInputName">
+                                    </div>
+
+                                    <div class="col-4 mb-4">
+                                        <label for="email" class="input-label-text">Type</label>
+                                        <input type="email" class="form-control input-field" id="exampleInputType">
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="email" class="input-label-text">Points</label>
+                                        <input type="number" class="form-control input-field" id="exampleInputPoints">
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="email" class="input-label-text">Reward</label>
+                                        <input type="email" class="form-control input-field" id="exampleInputRewards">
+                                    </div>
+
+                                    <div class="col-12 mb-4">
+                                        <label for="email" class="input-label-text">Processed By</label>
+                                        <input type="email" class="form-control input-field"
+                                            id="exampleInputProcessedBy">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="input-label-text">Notes</label>
+                                        <textarea class="form-control input-field" rows="6" name="" id=""></textarea>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn custom-close-btn mt-0" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn custom-btn mt-0">Add Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Container Main end-->
+    </section>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+
+
+<script>
+
+</script>
+
+<style>
+    body {
+        position: relative;
+        margin: 3rem 0 0 0;
+        padding: 0 1rem;
+        font-family: var(--body-font);
+        font-size: 1rem;
+        transition: .5s
+    }
+
+    :root {
+        --header-height: 3rem;
+        --nav-width: 68px;
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            margin: calc(var(--header-height) + 1rem) 0 0 0;
+            padding-left: calc(var(--nav-width) + 2rem)
+        }
+
+
+        .header_img {
+            width: 40px;
+            height: 40px
+        }
+
+        .header_img img {
+            width: 45px
+        }
+
+        .l-navbar {
+            left: 0;
+            padding: 1rem 1rem 0 0
+        }
+
+        .show-side-bar {
+            width: calc(var(--nav-width) + 156px)
+        }
+
+        .body-pd {
+            padding-left: calc(var(--nav-width) + 188px)
+        }
+    }
+
+
+    .profile-img-wrapper {
+        width: 60px;
+        height: 60px;
+        padding: 3px;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .profile-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+</style>
