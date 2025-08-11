@@ -148,7 +148,35 @@ a:hover {
             color: white;
         }
 
+        /* Reviewed Button */
+        .btn-reviewed {
+            border-color: #00cc66;
+            color: #00cc66;
+        }
+        .btn-reviewed:hover {
+            background-color: #00cc66;
+            color: white;
+        }
 
+        /* Mark reviewed Button */
+        .btn-mark-reviewed {
+            border-color: #0066ff;
+            color: #0066ff;
+        }
+        .btn-mark-reviewed:hover {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        /* clear Button */
+        .btn-clear {
+            border-color: #cc0000;
+            color: #cc0000;
+        }
+        .btn-clear:hover {
+            background-color: #cc0000;
+            color: white;
+        }
 
 
 /* ============================
@@ -488,6 +516,63 @@ a:hover {
 
 /* ============================
   admin Rewards page deshbord Classes End
+============================= */
+
+
+/* ============================
+  admin Activity Monitor Classes start
+============================= */
+
+/* Common style for dropdowns & date fields */
+.select-input,
+.date-input {
+    width: 100%;
+    padding: 10px 20px 10px 20px; /* even padding */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    background-color: #0b0f2a;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+}
+
+
+/* Keep transparent style on focus */
+.select-input:focus,
+.date-input:focus {
+    background-color: #0b0f2a;
+    color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Wrapper for dropdown arrow */
+.select-wrapper {
+    position: relative;
+}
+
+/* Custom dropdown arrow positioning */
+.select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    right: 30px; /* moved closer */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+/* Show calendar icon for date inputs */
+.date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1) opacity(0.6); /* white + muted */
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+/* ============================
+  admin Activity Monitor Classes end
 ============================= */
 
 
