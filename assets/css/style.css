@@ -529,6 +529,15 @@ a:hover {
     background: transparent;
   }
 
+  .textarea-field{
+    background: transparent;
+  }
+
+  .textarea-field:focus{
+    background: transparent;
+  }
+  
+
 /* ============================
    customer deshbord Classes End
 ============================= */
