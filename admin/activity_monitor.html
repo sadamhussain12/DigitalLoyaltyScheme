@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+
+
+    <title>Admin aazzzzzzzz</title>
+</head>
+
+<body id="admin-body-pd" class="admin-body-pd">
+
+
+    <section class="admin">
+        <header class="header admin-body-pd" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+            <div class="admin-header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+        </header>
+        <div class="admin-l-navbar show-side-bar" id="nav-bar">
+            <nav class="nav">
+
+                <!-- Logo Section -->
+                <div>
+                    <a href="#" class="nav_logo">
+                        <img class="img-fluid" src="../assets/images/logo-icon.png" alt="Logo" style="width: 26px;">
+                        <span class="nav_logo-name">Digital Loyalty</span>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="nav_list">
+                        <a href="#" class="nav_link active">
+                            <i class='bx bx-grid-alt nav_icon'></i>
+                            <span class="nav_name">Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class="fa-solid fa-coins"></i>
+                            <span class="nav_name">Points History</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class="fa-light fa-treasure-chest"></i>
+                            <span class="nav_name">Rewards History</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class="fa-light fa-treasure-chest"></i>
+                            <span class="nav_name">Transection History</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-message-square-detail nav_icon'></i>
+                            <span class="nav_name">Support</span>
+                        </a>
+
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-user nav_icon'></i>
+                            <span class="nav_name">Profile</span>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Sign Out Link -->
+                <a href="#" class="nav_link">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">Sign Out</span>
+                </a>
+
+            </nav>
+        </div>
+        <!--Container Main start-->
+        <div class="pt-4">
+
+            <!-- Page Title -->
+            <div class="d-flex justify-content-between mb-4">
+                <h1 style="font-size: 1.8rem;"> Activity Monitor</h1>
+            </div>
+
+            <!-- Filters Row -->
+            <div class="row mb-3">
+                <div class="col-md-3 mb-2 search-wrapper">
+                    <input type="text" class="search-input" placeholder="Search text / customer">
+                </div>
+                <div class="col-md-2 mb-2 select-wrapper">
+                    <select class="select-input">
+                        <option>All types</option>
+                        <option>Earned</option>
+                        <option>Redeemed</option>
+                        <option>Adjustment</option>
+                        <option>Customer</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-2 date-wrapper">
+                    <input type="date" class="date-input" placeholder="dd/mm/yyyy" required>
+                </div>
+                <div class="col-md-2 mb-2 date-wrapper">
+                    <input type="date" class="date-input" placeholder="dd/mm/yyyy" required>
+                </div>
+                <div class="col-md-2 mb-2 select-wrapper">
+                    <select class="select-input">
+                        <option>All</option>
+                        <option>Reviewed</option>
+                        <option>Unreviewed</option>
+                    </select>
+                </div>
+                <div class="col-md-1 mb-2">
+                    <button class="btn btn-secondary btn-block">Clear</button>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="mb-3">
+                <span class="mr-3 font-weight-bold">5 total events</span>
+                <span class="badge badge-success">1 earned</span>
+                <span class="badge badge-danger">1 redeemed</span>
+                <span class="badge badge-warning text-white">1 adjustment</span>
+                <span class="badge badge-primary">2 customer</span>
+            </div>
+
+            <!-- Activity List -->
+            <ul class="list-group custom-card mb-3">
+
+                <!-- Earned -->
+                <li class="list-group-item custom-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Points earned</strong> - Sara Khan <small>(CUS123456)</small><br>
+                            <span class="text-muted">Points: +40 | Reward: £5 Off Voucher | Info: POS #1 | ID:
+                                TXN663691</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="badge badge-success">Earned</span><br>
+                            <small class="text-muted">15m ago</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-custom btn-mark-reviewed btn-sm">Mark reviewed</button>
+                        <button class="btn btn-custom btn-delete btn-sm">Delete</button>
+                    </div>
+                </li>
+
+                <!-- Redeemed -->
+                <li class="list-group-item custom-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Points redeemed</strong> - Ali Raza <small>(CUS123457)</small><br>
+                            <span class="text-muted">Points: -150 | Reward: £5 Voucher | Info: Admin | ID:
+                                TXN371185</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="badge badge-danger">Redeemed</span><br>
+                            <small class="text-muted">1h ago</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-custom btn-reviewed btn-sm">Reviewed</button>
+                        <button class="btn btn-custom btn-delete btn-sm">Delete</button>
+                    </div>
+                </li>
+
+                <!-- Adjustment -->
+                <li class="list-group-item custom-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Points adjusted</strong> - Mehreen Akhtar <small>(CUS123458)</small><br>
+                            <span class="text-muted">Points: +20 | Info: Birthday bonus | ID: TXN214052</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="badge badge-warning text-white">Adjustment</span><br>
+                            <small class="text-muted">3h ago</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-custom btn-mark-reviewed btn-sm">Mark reviewed</button>
+                        <button class="btn btn-custom btn-delete btn-sm">Delete</button>
+                    </div>
+                </li>
+
+                <!-- Customer Disabled -->
+                <li class="list-group-item custom-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Customer account disabled</strong> - Mehreen Akhtar <small>(CUS123458)</small><br>
+                            <span class="text-muted">Info: Fraud check | ID: TXN336368</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="badge badge-primary">Disabled</span><br>
+                            <small class="text-muted">4h ago</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-custom btn-mark-reviewed btn-sm">Mark reviewed</button>
+                        <button class="btn btn-custom btn-delete btn-sm">Delete</button>
+                    </div>
+                </li>
+
+                <!-- Customer Created -->
+                <li class="list-group-item custom-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>Customer account created</strong> - John Smith <small>(CUS123459)</small><br>
+                            <span class="text-muted">Info: Web signup | ID: TXN228426</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="badge badge-info">Created</span><br>
+                            <small class="text-muted">8/10/2025, 12:43 PM</small>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-custom btn-reviewed btn-sm">Reviewed</button>
+                        <button class="btn btn-custom btn-delete btn-sm">Delete</button>
+                    </div>
+                </li>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </ul>
+
+
+
+            <!-- Simulate Activity -->
+            <div class="custom-card mt-4 mb-2">
+                <div class="card-header">
+                    Simulate Activity (Demo)
+                </div>
+                <div class="card-body">
+                    <div class="form-row align-items-center">
+                        <div class="col-md-3 mb-2">
+                            <input type="text" class="form-control input-field" placeholder="Customer name e.g., Sara">
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <input type="text" class="form-control input-field" placeholder="Customer ID e.g., CUS123">
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <input type="number" class="form-control input-field" placeholder="25">
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <input type="text" class="form-control input-field" placeholder="Reward (if redeem)">
+                        </div>
+                        <div class="col-md-12 mb-2 mt-2">
+                            <button class="btn btn-success btn-sm">+ Earn</button>
+                            <button class="btn btn-danger btn-sm">- Redeem</button>
+                            <button class="btn btn-warning btn-sm text-white">± Adjust</button>
+                            <button class="btn btn-info btn-sm">Customer Created</button>
+                            <button class="btn btn-primary btn-sm">Customer Disabled</button>
+                            <button class="btn btn-secondary btn-sm">Customer Enabled</button>
+                            <button class="btn btn-custom btn-clear btn-sm">Clear All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Container Main end-->
+    </section>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript JS -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<style>
+    body {
+        position: relative;
+        margin: 3rem 0 0 0;
+        padding: 0 1rem;
+        font-family: var(--body-font);
+        font-size: 1rem;
+        transition: .5s
+    }
+
+    :root {
+        --header-height: 3rem;
+        --nav-width: 68px;
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            margin: calc(var(--header-height) + 1rem) 0 0 0;
+            padding-left: calc(var(--nav-width) + 2rem)
+        }
+
+
+        .header_img {
+            width: 40px;
+            height: 40px
+        }
+
+        .header_img img {
+            width: 45px
+        }
+
+        .l-navbar {
+            left: 0;
+            padding: 1rem 1rem 0 0
+        }
+
+        .show-side-bar {
+            width: calc(var(--nav-width) + 156px)
+        }
+
+        .body-pd {
+            padding-left: calc(var(--nav-width) + 188px)
+        }
+    }
+</style>
