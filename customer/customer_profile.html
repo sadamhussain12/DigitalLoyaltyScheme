@@ -86,61 +86,125 @@
             </nav>
         </div>
         <!--Container Main start-->
-        <div class="container-fluid">
+        <div class="container-fluid pt-4 pb-3">
             <div class="row">
+                <div class="col-md-12">
 
-                <div class="col-md-12 align-content-center pt-5 pb-5">
-
-                    <div class="d-flex justify-content-between mb-4">
-                        <h1 style="font-size: 1.8rem;"> <img class="img-fluid" src="../assets/images/profile.png"
-                                alt=""> Update Profile</h1>
-
+                    <div class="d-flex justify-content-between mb-2">
+                        <h1 style="font-size: 1.8rem;">
+                            <img class="img-fluid" src="../assets/images/profile.png" alt="">
+                            Update Profile
+                        </h1>
                     </div>
 
-                    <div class="custom-card mb-4">
-                        <form>
+                    <div class="custom-card mb-4 p-4">
 
-                            <!-- Profile Picture Upload -->
-                            <label class="input-label-text">Profile Picture</label>
-                            <div class="profile-picture-wrapper mb-4">
-                                <img id="profilePreview" src="https://i.imgur.com/hczKIze.jpg" alt="Profile Picture">
-                                <input type="file" id="profileImageInput" accept="image/*" hidden>
-                                <button type="button" class="btn custom-btn"
-                                    onclick="document.getElementById('profileImageInput').click();">
-                                    Update Picture
-                                </button>
+                        <!-- Horizontal Tabs -->
+                        <ul class="nav nav-tabs d-flex flex-row justify-content-start" id="profileTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="profile-info-tab" data-toggle="tab" href="#profile-info"
+                                    role="tab">Profile Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="password-tab" data-toggle="tab" href="#password"
+                                    role="tab">Password</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content pt-4" id="profileTabContent">
+
+                            <!-- Profile Info Tab -->
+                            <div class="tab-pane fade show active" id="profile-info" role="tabpanel">
+                                <div class="row">
+                                    <!-- Left: Form -->
+                                    <div class="col-md-6">
+                                        <form>
+                                            <label class="input-label-text">Profile Picture</label>
+                                            <div class="profile-picture-wrapper mb-4">
+                                                <img id="profilePreview" src="https://i.imgur.com/hczKIze.jpg"
+                                                    alt="Profile Picture" style="max-width:150px;">
+                                                <input type="file" id="profileImageInput" accept="image/*" hidden>
+                                                <button type="button" class="btn custom-btn mt-2"
+                                                    onclick="document.getElementById('profileImageInput').click();">
+                                                    Update Picture
+                                                </button>
+                                            </div>
+
+                                            <label for="name" class="input-label-text">Full Name</label>
+                                            <input type="text" class="form-control input-field" id="exampleInputnames">
+
+                                            <label for="email" class="input-label-text mt-3">Email address</label>
+                                            <input type="email" class="form-control input-field"
+                                                id="exampleInputEmail1">
+
+                                            <!-- Phone Number + Status in one row -->
+                                            <div class="row mt-3">
+                                                <div class="col-md-8">
+                                                    <label for="phone-number" class="input-label-text">Phone
+                                                        Number</label>
+                                                    <input type="tel" class="form-control input-field"
+                                                        id="exampleInputnumber">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="status" class="input-label-text">Status</label>
+                                                    <select class="form-control select-input-update">
+                                                        <option>Status</option>
+                                                        <option>Active</option>
+                                                        <option>Disable</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn custom-btn btn-block mt-4" type="submit">Update</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Right: Image -->
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/images/update_profile.png" alt="Side Illustration"
+                                            class="img-fluid" style="max-width: 70%; height: auto;">
+                                    </div>
+                                </div>
                             </div>
 
+                            <!-- Password Tab -->
+                            <div class="tab-pane fade" id="password" role="tabpanel">
+                                <div class="row">
+                                    <!-- Left: Password Form -->
+                                    <div class="col-md-6 mt-5">
+                                        <form>
+                                            <label for="Password" class="input-label-text">Update Password</label>
+                                            <input type="password" class="form-control input-field"
+                                                id="exampleInputPassword1">
 
-                            <label for="name" class="input-label-text">Full Name</label>
-                            <input type="text" class="form-control input-field" id="exampleInputnames">
+                                            <label for="Confirm-Password" class="input-label-text mt-4">Confirm
+                                                Password</label>
+                                            <input type="password" class="form-control input-field"
+                                                id="exampleInputPassword2">
 
-                            <label for="email" class="input-label-text mt-3">Email address</label>
-                            <input type="email" class="form-control input-field" id="exampleInputEmail1">
+                                            <button class="btn custom-btn btn-block mt-5" type="submit">Update
+                                                Password</button>
+                                        </form>
+                                    </div>
 
-                            <label for="phonr-number" class="input-label-text mt-3">Phone Number</label>
-                            <input type="tel" class="form-control input-field" id="exampleInputnumber">
+                                    <!-- Right: Image -->
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                        <img src="../assets/images/update_profile.png" alt="Side Illustration"
+                                            class="img-fluid" style="max-width: 70%; height: auto;">
+                                    </div>
+                                </div>
+                            </div>
 
-                            <label for="status" class="input-label-text mt-3">Status</label>
-                            <select class="select-input-update">
-                                <option>Status</option>
-                                <option>Active</option>
-                                <option>Disable</option>
-                            </select>
+                        </div>
 
-                            <label for="Password" class="input-label-text mt-3">Update Password</label>
-                            <input type="password" class="form-control input-field" id="exampleInputPassword1">
-
-                            <label for="Confirm-Password" class="input-label-text mt-3">Confirm Password</label>
-                            <input type="password" class="form-control input-field" id="exampleInputPassword2">
-
-                            <button class="btn custom-btn btn-block" type="submit">Update</button>
-
-                        </form>
                     </div>
 
                 </div>
-                <!--Container Main end-->
+            </div>
+        </div>
+
+        <!--Container Main end-->
     </section>
 
 
@@ -219,11 +283,13 @@
 </style>
 
 <script>
-    document.getElementById('profileImageInput').addEventListener('change', function (event) {
-        const file = event.target.files[0];
-        if (file) {
-            document.getElementById('profilePreview').src = URL.createObjectURL(file);
-        }
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('profileImageInput').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('profilePreview').src = URL.createObjectURL(file);
+            }
+        });
     });
 
 </script>
