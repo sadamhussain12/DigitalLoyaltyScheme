@@ -13,12 +13,59 @@
   --dark-color: #343a40;
   --btn-color: linear-gradient(to right, #ff00cc, #3333ff);
   --btn-hover-color: linear-gradient(to right, #e600b0, #1a1aff);
+  --bg-color: linear-gradient(135deg, #0f0029, #2b0a7f, #0a0045);
+  --text-color: white;
 
   --font-family-base: ItalianPlateNo1Expanded, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
   --heading-font-weight: 600;
 }
+
+/* Light Theme */
+.cus-theme-light {
+  --primary-color: #007bff;
+  --primary-color-2: #f8f9fa;
+  --primary-color-3: #ffffff;
+  --bg-color: #ffffff;
+  --dark-color: #000000;
+  --light-color: #000000;
+  --btn-color: linear-gradient(to right, #ff6600, #ffcc00);
+  --btn-hover-color: linear-gradient(to right, #e65c00, #ffb300);
+  --text-color: black;
+}
+
+/* Yellow-Red Theme */
+.cus-theme-yellow-red {
+  --primary-color: #f4ed2f;
+  --primary-color-2: #e12127;
+  --primary-color-3: #ffffff;
+  --bg-color: linear-gradient(135deg, #f4ed2f, #e12127);
+  --btn-color: linear-gradient(to right, #f4ed2f, #e12127);
+  --btn-hover-color: linear-gradient(to right, #e6e026, #b51a1f);
+  --text-color: black;
+}
+
+/* Green Theme */
+.cus-theme-green {
+  --primary-color: #28a745;
+  --primary-color-2: #0d3321;
+  --primary-color-3: #062b1b;
+  --bg-color: linear-gradient(135deg, #0f3d2e, #1b5e20, #062b1b);
+  --btn-color: linear-gradient(to right, #00ff99, #009933);
+  --btn-hover-color: linear-gradient(to right, #00e68a, #007a29);
+}
+
+/* Red Theme */
+.cus-theme-red {
+  --primary-color: #dc3545;
+  --primary-color-2: #3d0f13;
+  --primary-color-3: #2a0608;
+  --bg-color: linear-gradient(135deg, #450000, #800000, #2a0608);
+  --btn-color: linear-gradient(to right, #ff4d4d, #b30000);
+  --btn-hover-color: linear-gradient(to right, #e60000, #660000);
+}
+
 
 * {
   margin: 0;
@@ -31,10 +78,10 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--dark-color);
-  background: linear-gradient(135deg, #0f0029, #2b0a7f, #0a0045);
+  background: var(--bg-color);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* ============================

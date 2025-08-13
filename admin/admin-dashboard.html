@@ -100,8 +100,8 @@
           <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Photo" class="img-fluid rounded-circle">
         </div>
         <div>
-          <p class="mb-1 text-light small">Welcome back</p>
-          <h4 class="mb-0 text-white font-weight-bold">Jhon Anderson!</h4>
+          <p class="mb-1 small">Welcome back</p>
+          <h4 class="mb-0 font-weight-bold">Jhon Anderson!</h4>
         </div>
       </div>
     </div>
@@ -345,3 +345,119 @@
         }
     }
 </style>
+
+
+
+
+<style>
+  /* Sticky Theme Button */
+.cus-theme-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--btn-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.cus-theme-btn:hover {
+  background: var(--btn-hover-color);
+}
+
+/* Theme Options Panel */
+.cus-theme-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 9998;
+}
+
+/* Theme Option Buttons */
+.cus-theme-option {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.cus-theme-option:hover {
+  transform: scale(1.1);
+}
+
+</style>
+
+<!-- Sticky Theme Switcher -->
+<button id="cus-theme-toggle" class="cus-theme-btn">🎨</button>
+
+<!-- Theme Options Panel -->
+<div id="cus-theme-panel" class="cus-theme-panel">
+  <button class="cus-theme-option" style="background: #060b28" data-theme=""></button>
+  <button class="cus-theme-option" style="background:#ffffff" data-theme="cus-theme-light"></button>
+  <button class="cus-theme-option" style="background: #062b1b" data-theme="cus-theme-green"></button>
+  <button class="cus-theme-option" style="background:#2a0608" data-theme="cus-theme-red"></button>
+  <button class="cus-theme-option" style="background: linear-gradient(to right, #f4ed2f, #e12127)" data-theme="cus-theme-yellow-red"></button>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleBtn = document.getElementById("cus-theme-toggle");
+  const panel = document.getElementById("cus-theme-panel");
+  const themeOptions = document.querySelectorAll(".cus-theme-option");
+
+  // Keep track of all possible theme classes
+const themeClasses = ["cus-theme-light", "cus-theme-green", "cus-theme-red", "cus-theme-yellow-red", ""];
+
+
+  // Load saved theme without removing layout classes
+  const savedTheme = localStorage.getItem("cus-selected-theme");
+  if (savedTheme) {
+    document.body.classList.add(savedTheme);
+  }
+
+  // Toggle theme panel visibility
+  toggleBtn.addEventListener("click", function() {
+    panel.style.display = panel.style.display === "flex" ? "none" : "flex";
+  });
+
+  // Apply selected theme without overwriting other body classes
+  themeOptions.forEach(option => {
+    option.addEventListener("click", function() {
+      const theme = this.getAttribute("data-theme");
+
+      // Remove only theme classes, not layout classes
+      themeClasses.forEach(cls => {
+        if (cls) document.body.classList.remove(cls);
+      });
+
+      if (theme) {
+        document.body.classList.add(theme);
+      }
+
+      localStorage.setItem("cus-selected-theme", theme);
+      panel.style.display = "none";
+    });
+  });
+});
+
+</script>
