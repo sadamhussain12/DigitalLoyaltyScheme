@@ -626,3 +626,55 @@ a:hover {
 /* ============================
    customer deshbord Classes End
 ============================= */
+
+/* ============================
+   update Form Classes Start
+============================= */
+.select-input-update {
+  background: transparent;
+  color: var(--light-color);
+  height: 50px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0 35px 0 12px; /* space for arrow on the right */
+  width: 100%;
+  appearance: none; /* removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M4.646 6.646a.5.5 0 0 1 .708 0L8 9.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center; /* move arrow left */
+  background-size: 30px;
+}
+
+.select-input-update:focus {
+  background: transparent;
+  color: var(--light-color);
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.select-input-update option {
+  background: #000;
+  color: var(--light-color);
+}
+
+.profile-picture-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes button to right */
+  width: 100%;
+}
+
+.profile-picture-wrapper img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ced4da;
+}
+
+/* ============================
+   update Form Classes end
+============================= */
