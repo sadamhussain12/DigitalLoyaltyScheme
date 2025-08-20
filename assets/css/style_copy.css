@@ -1,0 +1,729 @@
+/* ============================
+   Root Variables & Reset
+============================= */
+:root {
+  --primary-color: #007bff;
+  --primary-color-2: #0f1535;
+  --primary-color-3: #060b28;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --btn-color: linear-gradient(to right, #ff00cc, #3333ff);
+  --btn-hover-color: linear-gradient(to right, #e600b0, #1a1aff);
+  --bg-color: linear-gradient(135deg, #0f0029, #2b0a7f, #0a0045);
+  --text-color: white;
+  --textfield-color:#0b0f2a;
+  --custom-bg-primay:#0b0f2a;
+
+  --font-family-base: ItalianPlateNo1Expanded, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --heading-font-weight: 600;
+}
+
+/* Light Theme */
+.cus-theme-light {
+  --primary-color: #007bff;
+  --primary-color-2: #f8f9fa;
+  --primary-color-3: #ffffff;
+  --bg-color: #ffffff;
+  --dark-color: #000000;
+  --light-color: #000000;
+  --btn-color: linear-gradient(to right, #ff6600, #ffcc00);
+  --btn-hover-color: linear-gradient(to right, #e65c00, #ffb300);
+  --text-color: black;
+}
+
+/* Yellow-Red Theme */
+.cus-theme-yellow-red {
+  --primary-color: #f4ed2f;
+  --primary-color-2: #e12127;
+  --primary-color-3: #ffffff;
+  --bg-color: linear-gradient(135deg, #f4ed2f, #e12127);
+  --btn-color: linear-gradient(to right, #f4ed2f, #e12127);
+  --btn-hover-color: linear-gradient(to right, #e6e026, #b51a1f);
+  --text-color: black;
+}
+
+/* Green Theme */
+.cus-theme-green {
+  --primary-color: #28a745;
+  --primary-color-2: #0d3321;
+  --primary-color-3: #062b1b;
+  --bg-color: linear-gradient(135deg, #0f3d2e, #1b5e20, #062b1b);
+  --btn-color: linear-gradient(to right, #00ff99, #009933);
+  --btn-hover-color: linear-gradient(to right, #00e68a, #007a29);
+}
+
+/* Red Theme */
+.cus-theme-red {
+  --primary-color: #dc3545;
+  --primary-color-2: #3d0f13;
+  --primary-color-3: #2a0608;
+  --bg-color: linear-gradient(135deg, #450000, #800000, #2a0608);
+  --btn-color: linear-gradient(to right, #ff4d4d, #b30000);
+  --btn-hover-color: linear-gradient(to right, #e60000, #660000);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--dark-color);
+  background: var(--bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+}
+
+/* ============================
+   Headings
+============================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--heading-font-weight);
+  font-family: var(--font-family-base);
+}
+
+/* ============================
+   Paragraphs
+============================= */
+p {
+  margin-bottom: 1em;
+}
+
+/* ============================
+   Links
+============================= */
+a {
+  color: var(--light-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* ============================
+   Buttons
+============================= */
+.custom-btn {
+  padding: 12px 20px;
+  background: var(--btn-color);
+  color: var(--light-colorss);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.custom-btn:hover {
+  background: var(--btn-hover-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  color: var(--light-color);
+}
+
+.custom-close-btn {
+  padding: 12px 20px;
+  background: black;
+  color: var(--light-colorss);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.custom-close-btn:hover {
+  background: var(--dark-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  color: var(--light-color);
+}
+
+
+       /* Common button style */
+        .btn-custom {
+            background: transparent;
+            border: 2px solid;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        /* Edit Button */
+        .btn-edit {
+            border-color: #0066ff;
+            color: #0066ff;
+        }
+        .btn-edit:hover {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        /* Enable Button */
+        .btn-enable {
+            border-color: #00cc66;
+            color: #00cc66;
+        }
+        .btn-enable:hover {
+            background-color: #00cc66;
+            color: white;
+        }
+
+        /* Delete Button */
+        .btn-delete {
+            border-color: #cc0000;
+            color: #cc0000;
+        }
+        .btn-delete:hover {
+            background-color: #cc0000;
+            color: white;
+        }
+
+        /* Reviewed Button */
+        .btn-reviewed {
+            border-color: #00cc66;
+            color: #00cc66;
+        }
+        .btn-reviewed:hover {
+            background-color: #00cc66;
+            color: white;
+        }
+
+        /* Mark reviewed Button */
+        .btn-mark-reviewed {
+            border-color: #0066ff;
+            color: #0066ff;
+        }
+        .btn-mark-reviewed:hover {
+            background-color: #0066ff;
+            color: white;
+        }
+
+        /* clear Button */
+        .btn-clear {
+            border-color: #cc0000;
+            color: #cc0000;
+        }
+        .btn-clear:hover {
+            background-color: #cc0000;
+            color: white;
+        }
+
+
+/* ============================
+   Form Classes Start
+============================= */
+
+.input-label-text {
+  font-weight: 700;
+}
+
+.input-field {
+  background: transparent;
+  color: var(--light-color);
+  height: 50px;
+}
+
+.input-field:focus {
+  background: transparent;
+  color: var(--light-color);
+}
+
+/* ============================
+   Form Classes End
+============================= */
+
+
+
+/* ============================
+   auth Classes Start
+============================= */
+
+.code-input-group .code-input {
+  width: 70px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.code-input-group .code-input:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 204, 0.25);
+}
+
+/* ============================
+   Login Classes End
+============================= */
+
+
+/* ============================
+   admin deshbord Classes Start
+============================= */
+
+
+
+.header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: transparent;
+  z-index: 100;
+  transition: .5s;
+  border-bottom: solid 1px #b4afaf52;
+  backdrop-filter: blur(2.625rem);
+}
+
+.header_toggle {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: var(--primary-color-2);
+    padding: 9px 10px 0px 10px;
+    border-radius: 10px;
+  
+}
+
+.admin-header_img {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden
+}
+
+.admin-header_img img {
+  width: 40px
+}
+
+.admin-l-navbar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: 68px;
+  height: 100vh;
+  background-color: var(--primary-color-2);
+  padding: .5rem 1rem 0 0;
+  transition: .5s;
+  z-index: 1000
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden
+}
+
+.nav_logo,
+.nav_link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: .5rem 0 .5rem 1.5rem
+}
+
+.nav_logo {
+  margin-bottom: 2rem
+}
+
+.nav_logo-icon {
+  font-size: 1.25rem;
+  color: var(--light-color)
+}
+
+.nav_logo-name {
+  color: var(--light-color);
+  font-weight: 700
+}
+
+.nav_link {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 1.5rem;
+  transition: .3s
+}
+
+.nav_link:hover {
+  color: var(--light-color)
+}
+
+.nav_icon {
+  font-size: 1.25rem
+}
+
+.show-side-bar {
+  left: 0
+}
+
+.admin-body-pd {
+  padding-left: calc(68px + 1rem)
+}
+
+.active {
+  color: var(--light-color)
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--light-color)
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: calc(3rem + 1rem) 0 0 0;
+    padding-left: calc(68px + 2rem)
+  }
+
+  .header {
+    height: calc(3rem + 1rem);
+    padding: 0 2rem 0 calc(68px + 2rem)
+  }
+
+  .admin-header_img {
+    width: 40px;
+    height: 40px
+  }
+
+  .admin-header_img img {
+    width: 45px
+  }
+
+  .admin-l-navbar {
+    left: 0;
+    padding: 1rem 1rem 0 0
+  }
+
+  .show-side-bar {
+    width: calc(68px + 156px)
+  }
+
+  .admin-body-pd {
+    padding-left: calc(68px + 188px)
+  }
+}
+
+.custom-card{
+  background-color: var(--primary-color-3);
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+  border-radius: 1rem;
+}
+
+.custom-card h4{
+  font-size: 1.5rem;
+}
+
+.custom-card h6{
+  font-size: 2rem;
+}
+
+.custom-table table{
+  color: var(--light-color) !important;
+}
+
+.custom-table tr{
+  border-bottom: 1px solid #d3d7dc2b;
+}
+
+.custom-bg-primary{
+  order: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: var(--custom-bg-primay);
+    padding: 8px;
+}
+
+  .search-wrapper {
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 20px 10px 45px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      background-color: var(--textfield-color);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-input::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 18px;
+    }
+
+         .profile-img-wrapper {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .profile-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+
+/* ============================
+   admin deshbord Classes End
+============================= */
+
+
+
+/* ============================
+   admin Rewards page deshbord Classes start
+============================= */
+
+.page-item.disabled .page-link {
+    color: white;
+    background-color: #0b0f2a;
+}
+
+.page-item.disabled .page-link:hover {
+    color: white;
+    background-color: #0b0f2a;
+}
+
+.page-link {
+    color: white !important;
+    background-color: #0b0f2a;
+}
+
+.page-link:hover {
+    color: white !important;
+    background-color: #0b0f2a;
+}
+
+.modal-header{
+  border-bottom: 1px solid #d3d7dc2b !important;
+}
+
+.modal-footer{
+  border-top: 1px solid #d3d7dc2b !important;
+}
+
+.modal-header .close{
+      background: white;
+    padding: 10px;
+    margin: -5px;
+    border-radius: 10px;
+}
+
+/* ============================
+  admin Rewards page deshbord Classes End
+============================= */
+
+
+/* ============================
+  admin Activity Monitor Classes start
+============================= */
+
+/* Common style for dropdowns & date fields */
+.select-input,
+.date-input {
+    width: 100%;
+    padding: 10px 20px 10px 20px; /* even padding */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    background-color: #0b0f2a;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+}
+
+
+/* Keep transparent style on focus */
+.select-input:focus,
+.date-input:focus {
+    background-color: #0b0f2a;
+    color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Wrapper for dropdown arrow */
+.select-wrapper {
+    position: relative;
+}
+
+/* Custom dropdown arrow positioning */
+.select-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    right: 30px; /* moved closer */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+/* Show calendar icon for date inputs */
+.date-input::-webkit-calendar-picker-indicator {
+    filter: invert(1) opacity(0.6); /* white + muted */
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+
+/* ============================
+  admin Activity Monitor Classes end
+============================= */
+
+
+
+/* ============================
+   customer deshbord Classes start
+============================= */
+
+
+  .qr-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px
+  }
+
+  .qr-img {
+    width: 220px;
+    height: 220px;
+    background: var(--light-color);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(15, 23, 42, 0.04)
+  }
+
+  .qr-code-code {
+    font-family: monospace;
+    background: var(--light-color);
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #111
+  }
+
+
+  .alt-btn-b {
+    background: transparent;
+  }
+
+  .textarea-field{
+    background: transparent;
+  }
+
+  .textarea-field:focus{
+    background: transparent;
+  }
+  
+
+/* ============================
+   customer deshbord Classes End
+============================= */
+
+/* ============================
+   update Form Classes Start
+============================= */
+.select-input-update {
+  background: transparent;
+  color: var(--light-color);
+  height: 50px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0 35px 0 12px; /* space for arrow on the right */
+  width: 100%;
+  appearance: none; /* removes default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M4.646 6.646a.5.5 0 0 1 .708 0L8 9.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center; /* move arrow left */
+  background-size: 30px;
+}
+
+.select-input-update:focus {
+  background: transparent;
+  color: var(--light-color);
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.select-input-update option {
+  background: #000;
+  color: var(--light-color);
+}
+
+.profile-picture-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes button to right */
+  width: 100%;
+}
+
+.profile-picture-wrapper img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ced4da;
+}
+
+/* ============================
+   update Form Classes end
+============================= */

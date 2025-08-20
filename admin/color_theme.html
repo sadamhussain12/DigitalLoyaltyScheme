@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../assets/css/style_copy.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+
+
+
+    <title>Admin Dashboard</title>
+</head>
+
+<body id="admin-body-pd" class="admin-body-pd">
+
+
+    <section class="admin">
+        <header class="header admin-body-pd" id="header">
+            <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+            <div class="admin-header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+        </header>
+        <div class="admin-l-navbar show-side-bar" id="nav-bar">
+  <nav class="nav">
+
+    <!-- Logo Section -->
+    <div>
+      <a href="#" class="nav_logo">
+        <img class="img-fluid" src="../assets/images/logo-icon.png" alt="Logo" style="width: 26px;">
+        <span class="nav_logo-name">Digital Loyalty</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="nav_list">
+        <a href="#" class="nav_link active">
+          <i class='bx bx-grid-alt nav_icon'></i>
+          <span class="nav_name">Dashboard</span>
+        </a>
+
+        <a href="#" class="nav_link">
+          <i class="fa-solid fa-coins"></i>
+          <span class="nav_name">Points History</span>
+        </a>
+
+        <a href="#" class="nav_link">
+          <i class="fa-light fa-treasure-chest"></i>
+          <span class="nav_name">Rewards History</span>
+        </a>
+
+        <a href="#" class="nav_link">
+          <i class="fa-light fa-treasure-chest"></i>
+          <span class="nav_name">Transection History</span>
+        </a>
+
+        <a href="#" class="nav_link">
+          <i class='bx bx-message-square-detail nav_icon'></i>
+          <span class="nav_name">Support</span>
+        </a>
+
+        <a href="#" class="nav_link">
+          <i class='bx bx-user nav_icon'></i>
+          <span class="nav_name">Profile</span>
+        </a>
+
+        
+      </div>
+    </div>
+
+    <!-- Sign Out Link -->
+    <a href="#" class="nav_link">
+      <i class='bx bx-log-out nav_icon'></i>
+      <span class="nav_name">Sign Out</span>
+    </a>
+
+  </nav>
+</div>
+        <!--Container Main start-->
+        <div class="pt-4">
+          
+      <h1 style="font-size: 1.8rem;"> Admin Dashboard – Loyalty Scheme</h1>      
+
+<div class="custom-card mb-3">
+ 
+ <div class="row ">
+    
+    <div class="col-md-6 mb-3 mb-4 mb-md-0">
+      <div class="d-flex rounded p-3">
+        <div class="profile-img-wrapper mr-3">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Photo" class="img-fluid rounded-circle">
+        </div>
+        <div>
+          <p class="mb-1 small">Welcome back</p>
+          <h4 class="mb-0 font-weight-bold">Jhon Anderson!</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3 text-center">
+      <img class="img-fluid" src="https://codervent.com/maxton/demo/vertical-menu/assets/images/gallery/welcome-back-3.png" alt="Illustration">
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="custom-card">
+            <img class="img-fluid mb-3" src="../assets/images/user.png" alt="user">
+    <h4 >Total Users</h4>
+    <h6>203</h6>
+</div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="custom-card">
+            <img class="img-fluid mb-3" src="../assets/images/reward.png" alt="reward">
+    <h4>Points Issued</h4>
+    <h6>15,800</h6>
+</div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="custom-card">
+            <img class="img-fluid mb-3" src="../assets/images/medal.png" alt="medal">
+    <h4>Rewards Redeemed</h4>
+    <h6>64</h6>
+</div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <div class="custom-card">
+            <img class="img-fluid mb-3" src="../assets/images/gift-card.png" alt="gift">
+    <h4>Active Rewards</h4>
+    <h6>5</h6>
+</div>
+    </div>
+</div>
+
+
+<div class="custom-card mb-3">
+
+   <h4 class="mb-2"><img class="img-fluid" src="../assets/images/lock.png" alt=""> Registered Customers</h4> 
+       
+
+   <div class="search-wrapper mb-3">
+  <i class="fas fa-search search-icon"></i>
+  <input type="text" class="search-input" placeholder="Search">
+</div>
+   
+   <div class="table-responsive custom-table">
+      <table class="table align-middle table-borderless">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Points</th>
+            <th>Last Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sara Khan</td>
+            <td>sara@example.com</td>
+            <td>180</td>
+            <td>2025-08-06</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ali Raza</td>
+            <td>ali@example.com</td>
+            <td>240</td>
+            <td>2025-08-05</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mehreen Akhtar</td>
+            <td>mehreen@example.com</td>
+            <td>90</td>
+            <td>2025-08-03</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+<div class="custom-card mb-3">
+
+   <h4 class="mb-2"><img class="img-fluid" src="../assets/images/championship.png" alt=""> Rewards List</h4> 
+       
+<ul class="list-group custom-list-group">
+      <li style="border-bottom: 1px solid #d3d7dc2b !important;" class="list-group-item bg-transparent d-flex justify-content-between align-items-center">
+        £5 Off Voucher
+        <span class="badge custom-bg-primary rounded-pill">150 Points</span>
+      </li>
+      <li style="border-bottom: 1px solid #d3d7dc2b !important;" class="list-group-item bg-transparent d-flex justify-content-between align-items-center">
+        Free Haircut
+        <span class="badge custom-bg-primary rounded-pill">300 Points</span>
+      </li>
+      <li style="border-bottom: 1px solid #d3d7dc2b !important;" class="list-group-item bg-transparent d-flex justify-content-between align-items-center">
+        Free Coffee
+        <span class="badge custom-bg-primary rounded-pill">80 Points</span>
+      </li>
+    </ul>
+   
+</div>
+
+
+<div class="custom-card mb-3">
+
+   <h4 class="mb-2"><img class="img-fluid" src="../assets/images/exchange.png" alt=""> Recent Transactions</h4> 
+       
+
+   <div class="search-wrapper mb-3">
+  <i class="fas fa-search search-icon"></i>
+  <input type="text" class="search-input" placeholder="Search">
+</div>
+   
+   <div class="table-responsive custom-table">
+      <table class="table align-middle table-borderless">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Customer</th>
+          <th>Type</th>
+          <th>Points</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1001</td>
+          <td>Sara Khan</td>
+          <td>Earned</td>
+          <td>+40</td>
+          <td>2025-08-06</td>
+        </tr>
+        <tr>
+          <td>1002</td>
+          <td>Ali Raza</td>
+          <td>Redeemed</td>
+          <td>-150</td>
+          <td>2025-08-05</td>
+        </tr>
+        <tr>
+          <td>1003</td>
+          <td>Mehreen Akhtar</td>
+          <td>Earned</td>
+          <td>+30</td>
+          <td>2025-08-03</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+</div>
+
+        </div>
+        <!--Container Main end-->
+    </section>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript JS -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<style>
+    body {
+        position: relative;
+        margin: 3rem 0 0 0;
+        padding: 0 1rem;
+        font-family: var(--body-font);
+        font-size: 1rem;
+        transition: .5s
+    }
+
+    :root {
+        --header-height: 3rem;
+        --nav-width: 68px;
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            margin: calc(var(--header-height) + 1rem) 0 0 0;
+            padding-left: calc(var(--nav-width) + 2rem)
+        }
+
+
+        .header_img {
+            width: 40px;
+            height: 40px
+        }
+
+        .header_img img {
+            width: 45px
+        }
+
+        .l-navbar {
+            left: 0;
+            padding: 1rem 1rem 0 0
+        }
+
+        .show-side-bar {
+            width: calc(var(--nav-width) + 156px)
+        }
+
+        .body-pd {
+            padding-left: calc(var(--nav-width) + 188px)
+        }
+    }
+</style>
+
+<style>
+  /* Sticky Theme Button */
+  .cus-theme-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .cus-theme-btn:hover {
+    background: var(--btn-hover-color);
+  }
+
+  /* Theme Options Panel - opens horizontally to the left */
+  .cus-theme-panel {
+    position: fixed;
+    right: 85px; /* move left of button */
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    padding: 8px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    z-index: 9998;
+  }
+
+  /* Theme Option Buttons */
+  .cus-theme-option {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
+  }
+
+  .cus-theme-option:hover {
+    transform: scale(1.1);
+  }
+
+  /* Black Theme */
+  .cus-theme-black {
+    --primary-color: #007bff;
+    --primary-color-2: #3b3b3b;
+    --primary-color-3: #3b3b3b;
+    --textfield-color:#7b7b7b;
+    --bg-color: #000000;
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --custom-bg-primay:#3b3b3b;
+    --btn-color: linear-gradient(to right, #00a6ff, #0051ff);
+    --btn-hover-color: linear-gradient(to right, #00a6ff, #0051ff);
+    --text-color: rgb(255, 255, 255);
+  }
+
+  /* Light Theme */
+  .cus-theme-light1 {
+    --primary-color: #007bff;
+    --primary-color-2: #c7c7c7;
+    --primary-color-3: #c7c7c7;
+    --textfield-color:#393838;
+    --bg-color: #ffffff;
+    --dark-color: #000000;
+    --custom-bg-primay:#c7c7c7;
+    --light-color: #000000;
+    --btn-color: linear-gradient(to right, #00a6ff, #0051ff);
+    --btn-hover-color: linear-gradient(to right, #00a6ff, #0051ff);
+    --text-color: black;
+  }
+</style>
+
+<!-- Sticky Theme Switcher -->
+<button id="cus-theme-toggle" class="cus-theme-btn">🖌️</button>
+
+<!-- Theme Options Panel -->
+<div id="cus-theme-panel" class="cus-theme-panel">
+  <!-- Default Theme -->
+  <button class="cus-theme-option" style="background: #060b28" data-theme=""></button>
+  <!-- White Theme -->
+  <button class="cus-theme-option" style="background:#ffffff" data-theme="cus-theme-light1"></button>
+  <!-- Black Theme -->
+  <button class="cus-theme-option" style="background: #000000" data-theme="cus-theme-black"></button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleBtn = document.getElementById("cus-theme-toggle");
+  const panel = document.getElementById("cus-theme-panel");
+  const themeOptions = document.querySelectorAll(".cus-theme-option");
+
+  const themeClasses = ["cus-theme-light1", "cus-theme-black", ""];
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem("cus-selected-theme");
+  if (savedTheme) {
+    document.body.classList.add(savedTheme);
+  }
+
+  // Toggle theme panel
+  toggleBtn.addEventListener("click", function() {
+    panel.style.display = panel.style.display === "flex" ? "none" : "flex";
+  });
+
+  // Apply selected theme
+  themeOptions.forEach(option => {
+    option.addEventListener("click", function() {
+      const theme = this.getAttribute("data-theme");
+
+      themeClasses.forEach(cls => {
+        if (cls) document.body.classList.remove(cls);
+      });
+
+      if (theme) {
+        document.body.classList.add(theme);
+      }
+
+      localStorage.setItem("cus-selected-theme", theme);
+      panel.style.display = "none";
+    });
+  });
+});
+</script>
